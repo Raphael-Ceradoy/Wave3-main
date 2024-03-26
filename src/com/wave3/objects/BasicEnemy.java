@@ -39,6 +39,8 @@ public class BasicEnemy extends GameObject{
 		x += velX;
 		y += velY;
 
+		handler.addObject(new Trail(x, y, Color.blue, (int)width, (int)height, 0.05f, handler));
+
 		clamp();
 		
 		if(hit.get("left") || hit.get("right")) velX *= -1;

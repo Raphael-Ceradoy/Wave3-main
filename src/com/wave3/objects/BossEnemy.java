@@ -52,7 +52,9 @@ public class BossEnemy extends GameObject{
 		if(exit_timer <= 0) {
 			velY = 1;
 		}
-		
+
+		handler.addObject(new Trail(x, y, Color.DARK_GRAY, (int)width, (int)height, 0.05f, handler));
+
 		if(y > GameWindow.GAMEHEIGHT) {
 			handler.removeObject(this);
 		}

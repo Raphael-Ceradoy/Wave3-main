@@ -58,6 +58,8 @@ public class SmartEnemy extends GameObject{
 		x += velX;
 		y += velY;
 
+		handler.addObject(new Trail(x, y, Color.green, (int)width, (int)height, 0.05f, handler));
+
 		clamp();
 	}
 

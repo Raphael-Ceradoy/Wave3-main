@@ -24,6 +24,8 @@ public class ExplosionPelletEnemy extends GameObject{
 		velX *= 1.005;
 		velY *= 1.005;
 
+		handler.addObject(new Trail(x, y, Color.LIGHT_GRAY, (int)width, (int)height, 0.05f, handler));
+
 		clamp();
 		
 		if(hit.get("left") || hit.get("right") || hit.get("up") || hit.get("down")) {

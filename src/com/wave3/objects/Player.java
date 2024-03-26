@@ -54,6 +54,9 @@ public class Player extends GameObject{
 		//Update player position
 		x += velX;
 		y += velY;
+
+		//Create trail behind player
+		handler.addObject(new Trail(x, y, Color.white, (int)width, (int)height, 0.05f, handler));
 		
 		//Keep player in bounds
 		clamp();
