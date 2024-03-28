@@ -41,11 +41,15 @@ public class HUD {
 		g.setColor(Color.WHITE);
 		g.drawString("Score: " + Gamestate.score, 5, 65);
 		g.drawString("Level: " + Gamestate.level, 10, 95);
-		
-		g.setColor(Color.green);
+
+
+		g.setColor(Color.gray);
+		g.fillRect(5, 5, GameWindow.GAMEWIDTH/3, 35);
+		g.setColor(new Color(90, (int)(255 * ratio), 0));
 		g.fillRect(5, 5, (int) (GameWindow.GAMEWIDTH/3 * ratio), 35);
 		g.setColor(Color.white);
 		g.drawRect(5, 5, GameWindow.GAMEWIDTH/3, 35);
+
 		
 	}
 }

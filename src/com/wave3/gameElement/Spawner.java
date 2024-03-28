@@ -48,18 +48,18 @@ public class Spawner {
 		else if(Gamestate.level == 10) {
 			handler.removeEnemies();
 		}
-//		else if(Gamestate.level == 10) {
-//			handler.addObject(new ExplosionEnemy(handler, 100, 100, 0, 5));
-//			handler.addObject(new ExplosionEnemy(handler, 250, 100, 0, 5));
-//			handler.addObject(new ExplosionEnemy(handler, 400, 100, 0, 5));
-//			handler.addObject(new ExplosionEnemy(handler, 550, 100, 0, 5));
-//			handler.addObject(new ExplosionEnemy(handler, 700, 100, 0, 5));
-//			handler.addObject(new ExplosionEnemy(handler, 100, 400, 0, -5));
-//			handler.addObject(new ExplosionEnemy(handler, 250, 400, 0, -5));
-//			handler.addObject(new ExplosionEnemy(handler, 400, 400, 0, -5));
-//			handler.addObject(new ExplosionEnemy(handler, 550, 400, 0, -5));
-//			handler.addObject(new ExplosionEnemy(handler, 700, 400, 0, -5));
-//		}
+		else if(Gamestate.level == 11) {
+			handler.addObject(new ExplosionEnemy(handler, 100, 100, 0, 5));
+			handler.addObject(new ExplosionEnemy(handler, 250, 100, 0, 5));
+			handler.addObject(new ExplosionEnemy(handler, 400, 100, 0, 5));
+			handler.addObject(new ExplosionEnemy(handler, 550, 100, 0, 5));
+			handler.addObject(new ExplosionEnemy(handler, 700, 100, 0, 5));
+			handler.addObject(new ExplosionEnemy(handler, 100, 400, 0, -5));
+			handler.addObject(new ExplosionEnemy(handler, 250, 400, 0, -5));
+			handler.addObject(new ExplosionEnemy(handler, 400, 400, 0, -5));
+			handler.addObject(new ExplosionEnemy(handler, 550, 400, 0, -5));
+			handler.addObject(new ExplosionEnemy(handler, 700, 400, 0, -5));
+		}
 		
 		
 	}
