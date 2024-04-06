@@ -53,7 +53,7 @@ public class FastEnemy extends GameObject{
 			velY = -cap;
 		}
 
-		handler.addObject(new Trail(x, y, Color.orange, (int)width, (int)height, 0.05f, handler));
+		handler.addObject(new Trail(x, y, Color.orange, (int)width, (int)height, 0.1f, handler));
 
 		clamp();
 		

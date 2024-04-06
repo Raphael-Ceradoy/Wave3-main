@@ -12,7 +12,7 @@ public class HUD {
 	private Handler handler;
 	private Spawner spawner;
 	
-	private int scorePerLevel = 250;
+	private int scorePerLevel = 500;
 	
 	
 	

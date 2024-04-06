@@ -24,7 +24,7 @@ public class ExplosionPelletEnemy extends GameObject{
 		velX *= 1.005;
 		velY *= 1.005;
 
-		handler.addObject(new Trail(x, y, Color.LIGHT_GRAY, (int)width, (int)height, 0.05f, handler));
+		handler.addObject(new Trail(x, y, Color.LIGHT_GRAY, (int)width, (int)height, 0.1f, handler));
 
 		clamp();
 		
