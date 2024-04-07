@@ -26,7 +26,6 @@ public class Player extends GameObject{
 		
 		x = GameWindow.GAMEWIDTH / 2 - width/2;
 		y = GameWindow.GAMEHEIGHT / 2 - height/2;
-		System.out.println(x);
 		
 	}
 
@@ -54,12 +53,15 @@ public class Player extends GameObject{
 		//Update player position
 		x += velX;
 		y += velY;
+		
+
+		//Keep player in bounds
+		clamp();
+		
 
 		//Create trail behind player
 		handler.addObject(new Trail(x, y, Color.white, (int)width, (int)height, 0.1f, handler));
-		
-		//Keep player in bounds
-		clamp();
+	
 	}
 
 	@Override

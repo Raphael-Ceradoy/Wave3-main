@@ -2,6 +2,7 @@ package com.wave3.objects;
 
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
+import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -26,6 +27,14 @@ public abstract class GameObject {
 		hit.put("right", false);
 		hit.put("left", false);
 	}
+	
+	public BufferedImage up1, up2, down1, down2, left1, left2, right1, right2;
+	
+	public String direction;
+	
+	public int spriteCounter = 0;
+	public int spriteNum = 1;
+	
 	public GameObject(Handler handler, float x, float y) {
 		this(handler);
 		this.x = x;

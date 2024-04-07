@@ -49,7 +49,7 @@ public class Handler {
 	
 //	Render all GameObjects
 	public void render(Graphics2D g2d) {
-		for(int i = objects.size()-1; i >= 0; i--) {
+		for(int i = 0; i < objects.size(); i++) {
 			objects.get(i).render(g2d);
 		}
 	}
@@ -58,7 +58,6 @@ public class Handler {
 	public void addObject(GameObject object) {
 		objects.add(object);
 	}
-	
 //	Remove an object from handler
 	public void removeObject(GameObject object) {
 		objects.remove(object);

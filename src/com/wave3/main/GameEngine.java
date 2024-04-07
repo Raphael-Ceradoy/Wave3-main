@@ -39,11 +39,12 @@ public class GameEngine implements Runnable{
 		keyboardListener = new KeyboardListener();
 		random = new Random();
 		handler = new Handler(keyboardListener, random);
-		this.gamestate = new Gamestate(handler);
+		this.gamestate = new Gamestate(handler, hud);
 		
 		gameWindow  = new GameWindow();
 		gameCanvas = new GameCanvas();
 		gameCanvas.addKeyListener(keyboardListener.getListener());
+		gameCanvas.addMouseListener(gamestate);
 	}
 	
 	public void start() {
@@ -105,9 +106,8 @@ public class GameEngine implements Runnable{
 	private void render() {
 		Graphics2D g2d = (Graphics2D) bufferStrategy.getDrawGraphics();
 		
-		g2d.setColor(Color.BLACK);
-		g2d.fillRect(0, 0, GameWindow.GAMEWIDTH, GameWindow.GAMEHEIGHT);
-		
+		//g2d.setColor(Color.BLACK);
+		//g2d.fillRect(0, 0, GameWindow.GAMEWIDTH, GameWindow.GAMEHEIGHT);
 //		handler.render(g2d);
 //		hud.render(g2d);
 		gamestate.render(g2d);

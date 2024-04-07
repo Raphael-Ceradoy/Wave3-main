@@ -12,7 +12,7 @@ import com.wave3.main.Gamestate;
 public class BossEnemy extends GameObject{
 	
 	private int spawn_timer = 30;
-	private int exit_timer = 1250;
+	private int exit_timer = 2000;
 	private int speed = 1;
 	
 	private float rotation = 0;
